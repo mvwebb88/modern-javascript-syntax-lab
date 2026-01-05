@@ -60,3 +60,46 @@ const uncontroversialPizzaToppings = [...morePizzaToppings];
 
 // Log the new array to the console
 console.log(uncontroversialPizzaToppings);
+
+//Exercise 5:
+// a. Duplicate the anotherCar object and spread its values into a new
+//    variable named myCar
+// b. Change the make and model properties of the myCar object
+// c. Console log both objects to observe the results
+
+// Starting code:
+const anotherCar = {
+  make: 'Toyota',
+  model: 'RAV4',
+};
+
+// Use the spread operator to create a copy of the object
+const myCar = { ...anotherCar };
+
+// Update properties on the copied object
+myCar.make = 'Honda';
+myCar.model = 'Civic';
+
+// Log the original object to show it is unchanged
+console.log(anotherCar);
+
+// Log the new object to show it has been modified independently
+console.log(myCar);
+
+//Exercise 6:
+// a. Define a variable named propertyName and assign a string to it
+// b. Create an object named userProfile
+// c. Use propertyName as a dynamic key in userProfile and assign it a value
+// d. Console log the userProfile object
+
+// Define a variable to be used as a dynamic key
+const propertyName = 'username';
+
+// Create an object using a dynamic key
+const userProfile = {
+  [propertyName]: 'mvwebb88',
+};
+
+// Log the userProfile object to the console
+console.log(userProfile);
+
