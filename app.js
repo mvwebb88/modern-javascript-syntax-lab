@@ -26,3 +26,37 @@ console.log(firstIngredient);
 
 // Log the second ingredient to the console
 console.log(secondIngredient);
+
+//Exercise 3:
+// a. Use object destructuring to extract the make and model properties
+//    from the car object into variables named make and model
+// b. Console log the make and model variables
+
+// Starting code:
+const car = {
+  make: 'Audi',
+  model: 'Q5',
+};
+
+// Use object destructuring to assign properties to variables
+const { make, model } = car;
+
+// Log the car make to the console
+console.log(make);
+
+// Log the car model to the console
+console.log(model);
+
+//Exercise 4:
+// a. Duplicate the morePizzaToppings array using the spread operator
+//    and assign it to a variable named uncontroversialPizzaToppings
+// b. Console log the uncontroversialPizzaToppings array
+
+// Starting code (don't modify this):
+const morePizzaToppings = ['Cheese', 'Sauce'];
+
+// Use the spread operator to create a copy of the array
+const uncontroversialPizzaToppings = [...morePizzaToppings];
+
+// Log the new array to the console
+console.log(uncontroversialPizzaToppings);
