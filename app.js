@@ -52,7 +52,7 @@ console.log(model);
 //    and assign it to a variable named uncontroversialPizzaToppings
 // b. Console log the uncontroversialPizzaToppings array
 
-// Starting code (don't modify this):
+// Starting code:
 const morePizzaToppings = ['Cheese', 'Sauce'];
 
 // Use the spread operator to create a copy of the array
@@ -103,3 +103,69 @@ const userProfile = {
 // Log the userProfile object to the console
 console.log(userProfile);
 
+//Exercise 8:
+// a. Create a function with two parameters, noun and adjective
+// b. Give noun a default value of "cat" and adjective a default value of "orange"
+// c. Log a sentence using the provided or default values
+
+// Define a function with default parameters
+function describeAnimal(noun = 'cat', adjective = 'orange') {
+  console.log(`The ${noun} is ${adjective}.`);
+}
+
+// Call the function with no arguments (uses defaults)
+describeAnimal();
+
+// Call the function with custom arguments
+describeAnimal('dog', 'brown');
+
+//Exercise 9:
+// a. Convert the provided if...else statement into a ternary operator
+
+// Starting code:
+const pizza = 'tasty';
+
+// Use a ternary operator to log the correct message
+pizza === 'tasty' ? console.log('yum') : console.log('yuck');
+
+//Exercise 10:
+// ! 10.1: Set language
+// a. Assign a default value using the logical OR operator
+// b. Create a variable called lang
+// c. Set lang to localLangConfig or 'en' if localLangConfig is falsy
+// d. Log the value of lang
+
+// Simulated language configuration
+const localLangConfig = null; // Change to 'es', 'fr', etc., or leave it null
+
+// Use logical OR to provide a default language
+const lang = localLangConfig || 'en';
+
+// Log the selected language
+console.log(lang);
+
+//10.2: Set website theme
+// a. Create a variable called theme
+// b. Set theme to savedUserTheme or 'light' if savedUserTheme is falsy
+// c. Log the value of theme
+
+// Simulated user theme preference (change this variable to test)
+const savedUserTheme = null; // Change to 'dark', etc., or leave it null
+
+// Use logical OR to provide a default theme
+const theme = savedUserTheme || 'light';
+
+// Log the selected theme
+console.log(theme);
+
+//Exercise 11:
+// a. Use optional chaining so accessing adventurer.cat.age
+//    returns undefined instead of throwing an error
+
+// Starting code:
+const adventurer = {
+  name: 'Alice',
+};
+
+// Use optional chaining to safely access nested properties
+console.log(adventurer.cat?.age);
